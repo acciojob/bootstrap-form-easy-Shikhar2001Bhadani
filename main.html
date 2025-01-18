@@ -4,37 +4,84 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		.main{
+			margin:0px;
+			padding:20px;
+			display:flex;
+			justify-content:space-around;
+			gap:10px;
+			flex-wrap:wrap;
+			border:2px solid lightgrey;
+			
+		}
+		.heading {
+	    text-align: center;
+		}
+		input[id="first-name-input"],input[id="last-name-input"],input[id="option"],
+		input[id="email-input"],input[id="college-input"],input[id="roll-no-input"]
+		{
+			border:2px solid lightgray;
+		}
+		#btn{
+			display:block;
+			
+		}
+	</style>
 </head>
 
 <body>
-	<h1>Internship Form</h1>
+	
+	<div class="main">
+		<h1 class="heading">Internship Form</h1>
 	<div>
-		<label for="first-name-input">First Name
-		<input id="first-name-input" type="text">
+		
+		<label for="first-name-input"><p>First Name</p>
+		<input class="form-control"id="first-name-input" type="text" required>
 		</label>
-		<label for="last-name-input">Last Name
-		<input id="last-name-input" type="text">
+	</div>
+	<span>
+		
+		<label for="last-name-input"><p>Last Name</p>
+		<input class="form-control"id="last-name-input" type="text" required>
 		</label>
-		<label for="email-input">Email Address
-		<input id="email-input" type="email">
+	</span>
+	<span>
+		<label for="email-input"><p>Email Address</p>
+		<input class="form-control"id="email-input" type="email" required>
+
+	
 		</label>
-		<label for="college-input">College
-		<input id="college-input" type="text">
+	</span>
+	<div>
+		<label for="college-input"><p>College</p>
+		<input class="form-control"id="college-input" type="text" required>
 		</label>
-		<label for="roll-no-input">Graduation Year
-		<select>
+	</div>
+	<span>
+		<label for="gard-year-select"><p>Graduation Year</p>
+		<select class="form-control"id="option" >
 			<option>2020</option>
 			<option>2021</option>
 			<option>2022</option>
 			<option>2023</option>
 		</select>
-		<label for="roll-no-input">Roll No.
-		<input id="roll-no-input" type="text">
 		</label>
-		<label for="conditions-checkbox">Agree to terms and conditions
-			<input type="checkbox">
+	</span>
+	<span>
+		<label for="roll-no-input"><p>Roll No.</p>
+		<input class="form-control" id="roll-no-input" type="text" required>
 		</label>
 	</div>
+	<div>
+		<label for="conditions-checkbox">
+			<input class="form-control" id="conditions-checkbox"type="checkbox" required>Agree to terms and conditions
+		</label>
+	</div>
+	
+</br>
+	<button id= "btn" type="submit">Submit Form</button>
+		</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
